@@ -60,11 +60,16 @@ img {
 @media screen and (max-width: 1150px) {
   html {
     font-size: 50%;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 425px) {
   html {
     font-size: 45%;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
 header.sticky {
@@ -174,7 +179,7 @@ header nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     background-color: #1B1C1E;
     justify-content: space-around;
     transform: translateX(100%);
@@ -185,6 +190,7 @@ header nav ul li a {
 
   .nav__links li {
     opacity: 0;
+    width: 50ch;
     margin: auto;
   }
 
@@ -222,8 +228,17 @@ header nav ul li a {
   }
 }
 @media screen and (max-width: 450px) {
+  .nav__links li {
+    margin: auto auto;
+  }
+
   nav .logo-container .logo-text {
     display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav__links {
+    width: 60%;
   }
 }
 main .jumbotron {
@@ -275,25 +290,29 @@ main .jumbotron .callout-container .callout-btn {
   }
 }
 @media screen and (max-width: 425px) {
-  .jumbotron .callout-container--blackscreen {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
+  main .jumbotron .callout-container--blackscreen {
+    min-width: 100%;
   }
-  .jumbotron .callout-container--blackscreen .callout-container {
+  main .jumbotron .callout-container--blackscreen .callout-container {
     position: absolute;
     top: 12rem;
-    left: 50%;
+    left: 25%;
+    min-width: 100%;
   }
-  .jumbotron .callout-container--blackscreen .callout-container .callout {
+  main .jumbotron .callout-container--blackscreen .callout-container .callout {
     width: 300px;
   }
-  .jumbotron .callout-container--blackscreen .callout-container .info-text {
+  main .jumbotron .callout-container--blackscreen .callout-container .info-text {
     display: none;
   }
-  .jumbotron .callout-container--blackscreen .callout-container .callout-btn {
+  main .jumbotron .callout-container--blackscreen .callout-container .callout-btn {
     position: absolute;
-    left: 15%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .jumbotron .callout-container--blackscreen .callout-container {
+    top: 8rem;
   }
 }
 .aboutus {
@@ -343,6 +362,29 @@ main .jumbotron .callout-container .callout-btn {
   }
 }
 @media screen and (max-width: 425px) {
+  .aboutus {
+    padding: 3rem 3rem;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .aboutus .ab-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutus .ab-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutus .ab-text .ab-body {
+    width: 30ch;
+  }
+}
+@media screen and (max-width: 320px) {
   .aboutus .ab-text .ab-body {
     width: 25ch;
   }
@@ -385,6 +427,28 @@ main .jumbotron .callout-container .callout-btn {
 @media screen and (max-width: 2560px) {
   .cards {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .cards {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card .card-picture {
+    padding: 4rem;
+  }
+  .card .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .card-text .card-body {
+    width: 25ch !important;
   }
 }
 .slideshow__package {
@@ -541,6 +605,18 @@ main .jumbotron .callout-container .callout-btn {
     position: relative;
   }
 }
+@media screen and (max-width: 768px) {
+  .prev {
+    position: relative;
+    top: -25rem;
+  }
+
+  .next {
+    position: relative;
+    top: -25rem;
+    right: -11rem;
+  }
+}
 @media screen and (max-width: 2560px) {
   .slideshow__package {
     margin: 0 auto;
@@ -550,16 +626,60 @@ main .jumbotron .callout-container .callout-btn {
   .slideshow__package {
     padding: 1rem 1rem;
   }
+  .slideshow__package .slideshow-container {
+    width: 30%;
+  }
+  .slideshow__package .mySlides .side__image {
+    position: relative;
+    left: -5rem;
+  }
+  .slideshow__package .mySlides .text {
+    display: none;
+  }
 
   .side__text {
     position: relative;
-    left: -300%;
+    left: -20rem;
   }
   .side__text .st__header {
     max-width: 300px;
   }
   .side__text .st__body {
     max-width: 300px;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .prev {
+    position: relative;
+    left: -9rem;
+    top: -20rem;
+  }
+
+  .next {
+    position: relative;
+    top: -20rem;
+    right: -3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .prev {
+    position: relative;
+    left: -9rem;
+    top: -15rem;
+  }
+
+  .next {
+    position: relative;
+    top: -15rem;
+    right: 1rem;
+  }
+}
+@media screen and (width: 375px) {
+  .next {
+    right: -2rem;
   }
 }
 .slideshow__package2 {
@@ -723,19 +843,96 @@ main .jumbotron .callout-container .callout-btn {
   }
 }
 @media screen and (max-width: 425px) {
+  .dots2 {
+    display: none;
+  }
+
   .slideshow__package2 {
     padding: 1rem 1rem;
+  }
+  .slideshow__package2 .slideshow-container2 {
+    width: 30%;
+    position: relative;
+  }
+  .slideshow__package2 .slideshow-container2 .mySlides2 .side__image2 {
+    position: relative;
+    left: 0;
+  }
+  .slideshow__package2 .slideshow-container2 .mySlides2 .text2 {
+    display: none;
   }
 
   .side__text2 {
     position: relative;
-    left: -300%;
+    left: -15rem;
   }
   .side__text2 .st__header2 {
     max-width: 300px;
   }
   .side__text2 .st__body2 {
     max-width: 300px;
+  }
+
+  .prev2 {
+    position: relative;
+    top: -19rem;
+  }
+
+  .next2 {
+    position: relative;
+    top: -19rem;
+    right: -9rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dots2 {
+    display: none;
+  }
+
+  .slideshow__package2 {
+    padding: 1rem 1rem;
+  }
+  .slideshow__package2 .slideshow-container2 {
+    width: 30%;
+    position: relative;
+  }
+  .slideshow__package2 .slideshow-container2 .mySlides2 .side__image2 {
+    position: relative;
+    left: 0;
+  }
+  .slideshow__package2 .slideshow-container2 .mySlides2 .text2 {
+    display: none;
+  }
+
+  .side__text2 {
+    position: relative;
+    left: -15rem;
+  }
+  .side__text2 .st__header2 {
+    max-width: 300px;
+  }
+  .side__text2 .st__body2 {
+    max-width: 300px;
+  }
+
+  .prev2 {
+    position: relative;
+    top: -16rem;
+  }
+
+  .next2 {
+    position: relative;
+    top: -16rem;
+    right: -5rem;
+  }
+}
+@media screen and (width: 768px) {
+  .prev2 {
+    top: 39rem;
+  }
+
+  .next2 {
+    top: 39rem;
   }
 }
 .slideshow__package3 {
@@ -881,7 +1078,14 @@ main .jumbotron .callout-container .callout-btn {
   }
 
   .st__header3 {
+    position: relative;
     width: 35ch;
+    left: -7rem;
+  }
+
+  .st__body3 {
+    position: relative;
+    left: -7rem;
   }
 
   .dots3 {
@@ -899,19 +1103,88 @@ main .jumbotron .callout-container .callout-btn {
   }
 }
 @media screen and (max-width: 425px) {
+  .dots3 {
+    display: none;
+  }
+
+  .text3 {
+    display: none;
+  }
+
+  .prev3 {
+    position: relative;
+    top: -18rem;
+    left: -12rem;
+  }
+
+  .next3 {
+    position: relative;
+    top: -18rem;
+    right: -1rem;
+  }
+
   .slideshow__package3 {
     padding: 1rem 1rem;
   }
-
-  .side__text3 {
+  .slideshow__package3 .slideshow-container3 {
+    width: 30%;
+  }
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 {
     position: relative;
-    left: -300%;
+    left: -15rem;
   }
-  .side__text3 .st__header3 {
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 .st__header3 {
     max-width: 300px;
   }
-  .side__text3 .st__body3 {
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 .st__body3 {
     max-width: 300px;
+  }
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__image3 .slide__image3 {
+    position: relative;
+    left: -50%;
+  }
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__image3 .text3 {
+    position: relative;
+    left: -50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slideshow__package3 {
+    padding: 1rem 1rem;
+  }
+  .slideshow__package3 .slideshow-container3 {
+    width: 30%;
+  }
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 {
+    position: relative;
+    left: -13rem;
+  }
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 .st__header3 {
+    max-width: 300px;
+  }
+  .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 .st__body3 {
+    max-width: 300px;
+  }
+
+  .prev3 {
+    position: relative;
+    top: -16rem;
+    left: -9rem;
+  }
+
+  .next3 {
+    position: relative;
+    top: -16rem;
+    right: 1rem;
+  }
+}
+@media screen and (width: 768px) {
+  .prev3 {
+    top: 39rem;
+  }
+
+  .next3 {
+    top: 39rem;
   }
 }
 footer {
@@ -953,5 +1226,11 @@ footer .fnav__text--container .fnav__text {
 @media screen and (max-width: 2560px) {
   footer {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer .footer__nav .fnav__icons {
+    width: 7rem;
+    height: 7rem;
   }
 }

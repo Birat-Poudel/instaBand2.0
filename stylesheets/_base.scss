@@ -71,11 +71,16 @@ img{
 @media screen and (max-width: 1150px){
     html{
         font-size: 50%;
+        overflow-x: hidden;
     }
 }
 
 @media screen and (max-width: 425px){
     html{
         font-size: 45%;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 }

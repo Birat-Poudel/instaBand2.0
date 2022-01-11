@@ -57,6 +57,32 @@
 
 @media screen and (max-width: 425px){
     .aboutus{
+        padding: 3rem 3rem;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        .ab-image{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .ab-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            .ab-header{
+            }
+            .ab-body{
+                width: 30ch;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .aboutus{
         .ab-text{
             .ab-body{
                 width: 25ch;

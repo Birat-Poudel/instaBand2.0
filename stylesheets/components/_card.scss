@@ -43,3 +43,25 @@
     }
 
 }
+
+@media screen and (max-width: 425px){
+    .cards{
+        flex-wrap: nowrap;
+        flex-direction: column;    
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        .card-picture{
+            padding: 4rem;
+        }
+        .card-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card-body{
+                width: 25ch !important;
+            }
+        }
+    }
+}

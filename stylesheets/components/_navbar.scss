@@ -8,7 +8,6 @@ header{
     width: 100%;
     background-color: $primary-color;
     padding: 0.75rem 4.5rem;
-
     nav{
         display: flex;
         justify-content: space-between;
@@ -110,7 +109,7 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 40%;
+        width: 50%;
         background-color: $primary-color;
         justify-content: space-around;
         transform: translateX(100%);
@@ -121,6 +120,7 @@ header{
 
       .nav__links li {
         opacity: 0;
+        width: 50ch;
         margin: auto;
       }
 
@@ -166,11 +166,23 @@ header{
 }
 
 @media screen and (max-width: 450px){
+
+  .nav__links{
+    li{
+      margin: auto auto;
+    }
+  }
   nav{
     .logo-container{
       .logo-text{
         display: none;
       }
     }
+  }
+}
+
+@media  screen and (max-width: 320px) {
+  .nav__links{
+    width: 60%;
   }
 }

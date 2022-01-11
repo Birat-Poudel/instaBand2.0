@@ -64,29 +64,43 @@ main{
 }
 
 @media screen and (max-width: 425px){
-    .jumbotron{
-        .callout-container--blackscreen{
-            position: absolute;
-            width: 100%;
-            opacity: 0;
-            .callout-container{
-                position: absolute;
-                top: 12rem;
-                left: 50%;
-                .callout{
-                    width: 300px;
-                    
-                }
-                .info-text{
-                    display: none;
-                }
-
-                .callout-btn{
+    main{
+        .jumbotron{
+            .callout-container--blackscreen{
+                min-width: 100%;
+                .callout-container{
                     position: absolute;
-                    left: 15%;
+                    top: 12rem;
+                    left: 25%;
+                    min-width: 100%;
+                    .callout{
+                        width: 300px;
+                        
+                    }
+                    .info-text{
+                        display: none;
+                    }
+    
+                    .callout-btn{
+                        position: absolute;
+                        left: 10%;
+                    }
+                }
+            }  
+        }    
+    }
+    }
+
+@media screen and (max-width: 320px){
+    main{
+        .jumbotron{
+            .callout-container--blackscreen{
+                .callout-container{
+                    top: 8rem;
                 }
             }
-        }  
-    }    
+
+        }
+    }
 }
 
