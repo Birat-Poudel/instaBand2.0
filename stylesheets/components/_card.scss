@@ -1,0 +1,45 @@
+.cards{
+    padding: 5rem 4rem;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+
+    .card{
+        display: inline-flex;
+        flex-direction: column;
+        .card-picture{
+            width: 100%;
+            height: 35rem;
+            object-fit: cover;
+            margin-top: 5rem;
+        }
+
+        .card-text{
+            margin-left: 1rem;
+            .card-header{
+                font-size: $title-font-size;
+                color: $accent-color;
+                margin: 5rem 0;
+            }
+
+            .card-body{
+                font-size: $body-font-size;
+                color: $fontcolor-blackscreen;
+                width: 20ch;
+                letter-spacing: 0.125rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 2560px){
+    .cards{
+        margin: 0 auto;
+    }
+
+}

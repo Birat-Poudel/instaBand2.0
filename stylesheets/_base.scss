@@ -1,0 +1,81 @@
+// Importing Perspective Sans Font
+@font-face {
+    font-family: 'perspective_sansregular';
+    src: url('/assets/fonts/perspectivesans-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/perspectivesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'perspective_sansitalic';
+    src: url('/assets/fonts/perspectivesans-italic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/perspectivesans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'perspective_sansbold';
+    src: url('/assets/fonts/perspectivesans-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/perspectivesans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//Reset Styles
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "perspective_sansregular", sans-serif;
+}
+
+.logo-text{
+    font-family: 'perspective_sansregular';
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #F5F5F5;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1150px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    html{
+        font-size: 45%;
+    }
+}

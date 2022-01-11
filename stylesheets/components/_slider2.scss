@@ -1,0 +1,175 @@
+.slideshow__package2{
+  padding: 3rem 6rem;
+  display: block;
+  background-color: $primary-color;
+  max-width: 1200px;
+}
+
+/* Slideshow container */
+.slideshow-container2 {
+  padding-top: 5rem;
+  width: 20%;
+  position: relative;
+  right: -80rem;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+  padding: 1rem;
+}
+
+.side__text2{
+position: absolute;
+top: 5rem;
+right: 42rem;
+
+.st__header2{
+  font-size: $title-font-size;
+  color: $accent-color;
+  letter-spacing: 0.25rem;
+  margin-bottom: 5rem;
+}
+
+.st__body2{
+  font-size: $body-font-size;
+  color: $fontcolor-blackscreen;
+  letter-spacing: 0.125rem;
+  width: 35ch;
+}
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $accent-color;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev2{
+  left: -35px;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: -35px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  transform: scale(1.1);
+}
+
+/* Caption text */
+.text2 {
+  color: $accent-color;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots2{
+  text-align: center;
+}
+  
+/* The dots/bullets/indicators */
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  border: 2px solid $accent-color;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2, .dot2:hover {
+  background-color: $accent-color;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 1150px){
+  .slideshow__package2{
+    padding: 5rem 1rem;
+  }
+
+  .slideshow-container2{
+    right:0;
+    margin: 0 auto;
+  }
+
+  .side__text2{
+    position: relative;
+    left: -50%;
+    top: -5rem;
+  }
+
+  .st__header2{
+    width: 35ch;
+  }
+
+  .dots2{
+    position: relative;
+    left: 0rem;
+  }
+
+  .text2{
+    position: relative;
+  }
+
+}
+
+@media screen and (max-width:2560px){
+  .slideshow__package2{
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 425px){
+  .slideshow__package2{
+    padding: 1rem 1rem;
+  }
+  .side__text2{
+    position: relative;
+    left: -300%;
+    .st__header2{
+      max-width: 300px;
+    }
+    .st__body2{
+      max-width: 300px;
+    }
+  }
+}
