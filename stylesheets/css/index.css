@@ -81,7 +81,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 header nav .logo-container {
   display: flex;
@@ -229,7 +229,7 @@ header nav ul li a {
 main .jumbotron {
   background-color: #1B1C1E;
   position: relative;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 main .jumbotron .video {
   width: 100%;
@@ -302,7 +302,7 @@ main .jumbotron .callout-container .callout-btn {
   justify-content: space-between;
   padding: 8rem 4.5rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .aboutus .ab-image {
   width: 45%;
@@ -355,7 +355,7 @@ main .jumbotron .callout-container .callout-btn {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .cards .card {
   display: inline-flex;
@@ -390,7 +390,7 @@ main .jumbotron .callout-container .callout-btn {
 .slideshow__package {
   padding: 3rem 6rem;
   display: block;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 /* Slideshow container */
@@ -566,7 +566,7 @@ main .jumbotron .callout-container .callout-btn {
   padding: 3rem 6rem;
   display: block;
   background-color: #1B1C1E;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 /* Slideshow container */
@@ -917,7 +917,7 @@ main .jumbotron .callout-container .callout-btn {
 footer {
   padding: 5rem 4.5rem;
   background-color: #1B1C1E;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 footer .footer__nav {
   display: inline-flex;
