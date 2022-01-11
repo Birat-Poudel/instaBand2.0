@@ -35,6 +35,9 @@ footer{
             font-size: $body-font-size;
             color: $accent-color;
             cursor: pointer;
+            &:first-child{
+                margin-right: 2rem;
+            }
         }
 
     }

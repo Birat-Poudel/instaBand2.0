@@ -45,12 +45,18 @@ main{
             margin-top: 5rem;
             background-color: $secondary-color;
             cursor: pointer;
+            &:hover{
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
         }
+        
     }
 
 
     }
 }
+
 
 @media screen and (max-width: 1150px){
 
