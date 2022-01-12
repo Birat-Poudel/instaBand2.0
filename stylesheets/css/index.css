@@ -288,6 +288,11 @@ main .jumbotron .callout-container .callout-btn:hover {
   color: #00D296;
 }
 
+@media screen and (max-width: 1150px) {
+  main {
+    overflow-x: hidden;
+  }
+}
 @media screen and (max-width: 2560px) {
   .jumbotron {
     margin: 0 auto;
@@ -317,6 +322,17 @@ main .jumbotron .callout-container .callout-btn:hover {
 @media screen and (max-width: 320px) {
   main .jumbotron .callout-container--blackscreen .callout-container {
     top: 8rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  main .jumbotron .callout-container--blackscreen {
+    width: 60%;
+  }
+  main .jumbotron .callout-container .callout {
+    width: 300px;
+  }
+  main .jumbotron .callout-container .info-text {
+    display: none;
   }
 }
 .aboutus {
@@ -1227,7 +1243,7 @@ footer .fnav__text--container .fnav__text {
   cursor: pointer;
 }
 footer .fnav__text--container .fnav__text:first-child {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 2560px) {

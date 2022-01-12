@@ -59,6 +59,9 @@ main{
 
 
 @media screen and (max-width: 1150px){
+    main{
+        overflow-x: hidden;
+    }
 
 }
 
@@ -110,3 +113,20 @@ main{
     }
 }
 
+@media screen and (max-width: 750px){
+    main{
+        .jumbotron{
+            .callout-container--blackscreen{
+                width: 60%;
+            }
+            .callout-container{
+                .callout{
+                    width: 300px;
+                }
+                .info-text{
+                    display: none;
+                }
+            }
+        }
+    }
+}
