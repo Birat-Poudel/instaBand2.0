@@ -187,3 +187,15 @@ header{
   }
 }
 
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ 
+  header{
+    nav{
+      .logo-container{
+        .logo{
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
