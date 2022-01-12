@@ -95,7 +95,7 @@ header nav .logo-container {
 header nav .logo-container .logo {
   width: 100%;
   object-fit: cover;
-  height: 5rem;
+  max-height: 5rem;
 }
 header nav .logo-container .logo-text {
   font-family: "perspective_sansregular", sans-serif;
@@ -429,7 +429,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 .cards .card .card-picture {
   width: 100%;
-  height: 35rem;
+  max-height: 35rem;
   object-fit: cover;
   margin-top: 5rem;
 }
@@ -1139,13 +1139,13 @@ main .jumbotron .callout-container .callout-btn:hover {
   .prev3 {
     position: relative;
     top: -18rem;
-    left: -12rem;
+    left: -10rem;
   }
 
   .next3 {
     position: relative;
     top: -18rem;
-    right: -1rem;
+    right: -3rem;
   }
 
   .slideshow__package3 {
@@ -1156,7 +1156,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
   .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 {
     position: relative;
-    left: -15rem;
+    left: -13rem;
   }
   .slideshow__package3 .slideshow-container3 .mySlides3 .side__text3 .st__header3 {
     max-width: 300px;
@@ -1166,7 +1166,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
   .slideshow__package3 .slideshow-container3 .mySlides3 .side__image3 .slide__image3 {
     position: relative;
-    left: -50%;
+    left: -35%;
   }
   .slideshow__package3 .slideshow-container3 .mySlides3 .side__image3 .text3 {
     position: relative;
@@ -1200,7 +1200,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   .next3 {
     position: relative;
     top: -16rem;
-    right: 1rem;
+    right: -1rem;
   }
 }
 @media screen and (width: 768px) {
