@@ -94,7 +94,7 @@ header nav .logo-container {
 }
 header nav .logo-container .logo {
   width: 100%;
-  background-size: cover;
+  object-fit: cover;
   height: 5rem;
 }
 header nav .logo-container .logo-text {
@@ -272,6 +272,8 @@ main .jumbotron .callout-container .info-text {
   color: #F5F5F5;
   width: 30ch;
   margin-top: 5rem;
+  line-height: 1.7;
+  letter-spacing: 0.125rem;
 }
 main .jumbotron .callout-container .callout-btn {
   font-size: 2.2rem;
@@ -356,9 +358,9 @@ main .jumbotron .callout-container .callout-btn:hover {
 .aboutus .ab-text .ab-body {
   font-size: 2.2rem;
   color: #5E6065;
-  width: 38ch;
+  width: 40ch;
   letter-spacing: 0.125rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 1150px) {
@@ -413,7 +415,9 @@ main .jumbotron .callout-container .callout-btn:hover {
   padding: 5rem 4rem;
   background-color: #1B1C1E;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-direction: row;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
@@ -442,6 +446,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   color: #F5F5F5;
   width: 20ch;
   letter-spacing: 0.125rem;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 2560px) {

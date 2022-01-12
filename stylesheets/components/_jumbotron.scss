@@ -33,7 +33,9 @@ main{
             font-size: $body-font-size;
             color: $fontcolor-blackscreen;
             width: 30ch;
-            margin-top: 5rem
+            margin-top: 5rem;
+            line-height: 1.7;
+            letter-spacing: 0.125rem;
         }
 
         .callout-btn{
