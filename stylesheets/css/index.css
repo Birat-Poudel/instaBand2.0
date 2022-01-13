@@ -177,7 +177,8 @@ header .navbar ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    justify-content: space-around;
+    width: 50%;
     background-color: #1B1C1E;
     transform: translateX(100%);
     transition: transform 500ms ease-in;
@@ -215,6 +216,9 @@ header .navbar ul li a {
   }
 }
 @media screen and (max-width: 450px) {
+  .nav__links {
+    width: 50%;
+  }
   .nav__links li {
     margin: auto auto;
   }
