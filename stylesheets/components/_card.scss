@@ -2,10 +2,10 @@
     padding: 5rem 4rem;
     background-color: $primary-color;
     display: flex;
-    -webkit-flex-wrap: wrap;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
+    -webkit-flex-direction: row;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     max-width: 1500px;
