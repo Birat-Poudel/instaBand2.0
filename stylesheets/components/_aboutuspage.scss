@@ -1,0 +1,74 @@
+.ab__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    .ab__container__header{
+        font-size: $title-font-size;
+        color: $accent-color;
+        margin: 5rem 0;
+    }
+    .ab__container__body{
+        width: 40ch;
+        font-size: $body-font-size;
+        color: $fontcolor-whitescreen;
+        letter-spacing: 0.125rem;
+        line-height: 1.6;
+        display: inline-block;
+        .showMore{
+            display: none;
+        }
+        &.show__more{
+            .showMore{
+                display: contents;
+            }
+            .dots{
+                display: none;
+            }
+        }
+    }
+    .ab__container__extra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem 0;
+        .ab__container__text{
+            font-size: 1.5rem;
+            color: $fontcolor-whitescreen;
+        }
+        #abc__icon{
+            cursor: pointer;
+        }
+    }   
+}
+
+@media screen and (max-width: 2560px){
+    .ab__container{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .dots{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .ab__container{
+        .ab__container__body{
+            width: 30ch;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .ab__container{
+        .ab__container__body{
+            width: 25ch;
+            margin: 0 auto;
+        }
+    }
+}
+
