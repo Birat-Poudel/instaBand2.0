@@ -177,7 +177,7 @@ header .navbar ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 50%;
     background-color: #1B1C1E;
     transform: translateX(100%);
@@ -220,7 +220,7 @@ header .navbar ul li a {
     margin: auto auto;
   }
 
-  nav .logo-container .logo-text {
+  .navbar .logo__container .logo__text {
     display: none;
   }
 }
@@ -360,11 +360,15 @@ main .jumbotron .callout-container .callout-btn:hover {
   .aboutus .ab-image {
     width: 80%;
   }
+  .aboutus .ab-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .aboutus .ab-text .ab-header {
     margin-top: 5rem;
   }
   .aboutus .ab-text .ab-body {
-    width: 48ch;
+    width: 45ch;
   }
 }
 @media screen and (max-width: 2560px) {
@@ -372,7 +376,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .aboutus {
     padding: 3rem 3rem;
     align-items: flex-start;
@@ -444,7 +448,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 539px) {
   .cards {
     flex-wrap: nowrap;
     flex-direction: column;
