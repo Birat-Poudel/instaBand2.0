@@ -474,6 +474,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
   .card .card-picture {
     padding: 4rem;
+    width: 100%;
   }
   .card .card-text {
     display: flex;
