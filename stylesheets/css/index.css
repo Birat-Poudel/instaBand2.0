@@ -1353,6 +1353,9 @@ footer .fnav__text--container .fnav__text:first-child {
   color: #EE7D54;
   font-size: 4.4rem;
   text-align: center;
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .owl-prev {
@@ -1371,17 +1374,16 @@ footer .fnav__text--container .fnav__text:first-child {
 .owl-prev span, .owl-next span {
   font-size: 80px;
   color: #EE7D54;
-  border: none;
-  outline: none;
 }
 
-.owl-next:focus, .owl-prev:focus {
+.owl-next span:focus, .owl-prev span:focus {
   outline: none;
 }
 
 @media screen and (max-width: 2560px) {
   .ab__container {
     margin: 0 auto;
+    min-height: auto;
   }
 }
 @media screen and (max-width: 1150px) {

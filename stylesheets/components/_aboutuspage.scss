@@ -92,6 +92,9 @@
     color: $accent-color;
     font-size: $title-font-size;
     text-align: center;
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .owl-prev{
@@ -110,15 +113,14 @@
 .owl-prev span, .owl-next span{
     font-size: 80px;
     color: #EE7D54;
-    border: none;
-    outline: none;
 }
 
-.owl-next:focus, .owl-prev:focus {outline: none;}
+.owl-next span:focus, .owl-prev span:focus {outline: none;}
 
 @media screen and (max-width: 2560px){
     .ab__container{
         margin: 0 auto;
+        min-height: auto;
     }
 }
 

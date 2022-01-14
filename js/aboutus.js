@@ -67,12 +67,15 @@ abContainerExtra.addEventListener('click', (e)=>{
 //For Feedback Carousel
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        autoplay: false,
+        center: true,
+        margin: 2,
+        autoplay: true,
         autoplayhoverpause: true,
         autoplaytimeout: 100,
         items: 3,
         nav: true,
         loop: true,
+        stagePadding: 20,
         responsive: {
             0:{
                 items:1,
