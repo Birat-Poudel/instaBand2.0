@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1500px;
+    background-color: $primary-color;
     .ab__container__header{
         font-size: $title-font-size;
         color: $accent-color;
@@ -11,7 +12,7 @@
     .ab__container__body{
         width: 40ch;
         font-size: $body-font-size;
-        color: $fontcolor-whitescreen;
+        color: $fontcolor-blackscreen;
         letter-spacing: 0.125rem;
         line-height: 1.6;
         display: inline-block;
@@ -34,7 +35,7 @@
         margin: 3rem 0;
         .ab__container__text{
             font-size: 1.5rem;
-            color: $fontcolor-whitescreen;
+            color: $fontcolor-blackscreen;
         }
         #abc__icon{
             cursor: pointer;

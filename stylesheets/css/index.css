@@ -1265,6 +1265,7 @@ footer .fnav__text--container .fnav__text:first-child {
   flex-direction: column;
   align-items: center;
   max-width: 1500px;
+  background-color: #1B1C1E;
 }
 .ab__container .ab__container__header {
   font-size: 4.4rem;
@@ -1274,7 +1275,7 @@ footer .fnav__text--container .fnav__text:first-child {
 .ab__container .ab__container__body {
   width: 40ch;
   font-size: 2.2rem;
-  color: #5E6065;
+  color: #F5F5F5;
   letter-spacing: 0.125rem;
   line-height: 1.6;
   display: inline-block;
@@ -1296,7 +1297,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .ab__container .ab__container__extra .ab__container__text {
   font-size: 1.5rem;
-  color: #5E6065;
+  color: #F5F5F5;
 }
 .ab__container .ab__container__extra #abc__icon {
   cursor: pointer;
