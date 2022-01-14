@@ -1265,12 +1265,15 @@ footer .fnav__text--container .fnav__text:first-child {
   flex-direction: column;
   align-items: center;
   max-width: 1500px;
+  height: 100%;
+  min-height: 100vh;
   background-color: #1B1C1E;
 }
 .ab__container .ab__container__header {
   font-size: 4.4rem;
   color: #EE7D54;
   margin: 5rem 0;
+  letter-spacing: 0.25rem;
 }
 .ab__container .ab__container__body {
   width: 40ch;

@@ -3,11 +3,14 @@
     flex-direction: column;
     align-items: center;
     max-width: 1500px;
+    height: 100%;
+    min-height: 100vh;
     background-color: $primary-color;
     .ab__container__header{
         font-size: $title-font-size;
         color: $accent-color;
         margin: 5rem 0;
+        letter-spacing: $letter-spacing;
     }
     .ab__container__body{
         width: 40ch;
