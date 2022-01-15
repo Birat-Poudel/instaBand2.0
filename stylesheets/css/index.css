@@ -1309,6 +1309,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .ab__container .ab__container__extra #abc__icon {
   cursor: pointer;
+  transition: all 200ms ease;
 }
 
 .ab__feedback__card {
@@ -1414,5 +1415,78 @@ footer .fnav__text--container .fnav__text:first-child {
   .ab__container .ab__container__body {
     width: 25ch;
     margin: 0 auto;
+  }
+}
+.faqbody {
+  background-color: #1B1C1E;
+}
+
+.faq__container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.faq__container .faq__header {
+  margin: 8rem 1rem;
+}
+.faq__container .faq__header .faqh {
+  color: #EE7D54;
+  font-size: 4.4rem;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  font-weight: normal;
+}
+.faq__container .faq__body {
+  max-width: 900px;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #FFFFFF;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq__container .faq__body .faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq__container .faq__body .faq__question h3 {
+  font-size: 2.6rem;
+  color: #F5F5F5;
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+}
+.faq__container .faq__body .faq__question svg {
+  transition: transform 0.25s ease-in;
+}
+.faq__container .faq__body .faq__ans__container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease;
+}
+.faq__container .faq__body .faq__ans {
+  padding-top: 4rem;
+  line-height: 1.6;
+  font-size: 2.2rem;
+  color: #F5F5F5;
+  letter-spacing: 0.125rem;
+}
+
+.faq__body.activefaq .faq__ans__container {
+  max-height: 300px;
+  animation: fadefaq 0.5s ease;
+}
+
+.faq__body.activefaq svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fadefaq {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
