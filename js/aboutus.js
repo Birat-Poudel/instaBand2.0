@@ -68,22 +68,30 @@ abContainerExtra.addEventListener('click', (e)=>{
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         center: true,
-        margin: 2,
+        margin: 15,
         autoplay: true,
         autoplayhoverpause: true,
         autoplaytimeout: 100,
         items: 3,
         nav: true,
         loop: true,
-        stagePadding: 20,
+        stagePadding: 0,
         responsive: {
             0:{
-                items:1,
-                dots:false
+                items:1.08,
+                dots:true
+            },
+            375:{
+                items: 1.28,
+                dots: true
+            },
+            425:{
+                items: 1.38,
+                dots: true
             },
             768: {
                 items: 2,
-                dots: false
+                dots: true
             },
             1200: {
                 items: 3,
