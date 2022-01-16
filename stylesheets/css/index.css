@@ -99,9 +99,9 @@ header .navbar .logo__container .logo {
 header .navbar .logo__container .logo__text {
   font-family: "perspective_sansregular", sans-serif;
   font-size: 4.6rem;
-  color: #3B96D1;
+  color: #3896d4;
   letter-spacing: 0.25rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 header .navbar ul {
   display: flex;
