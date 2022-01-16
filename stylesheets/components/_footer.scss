@@ -24,7 +24,7 @@ footer{
     }
 
     .fnav__text--container{
-        display: inline-flex;
+        display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
@@ -36,7 +36,7 @@ footer{
             color: $accent-color;
             cursor: pointer;
             &:first-child{
-                margin-right: 1rem;
+                margin-right: 2rem;
             }
         }
 
@@ -62,3 +62,16 @@ footer{
         }
     }
 }
+
+@media screen and (max-width: 450px){
+    .fnav__text--container{
+        display: flexbox;
+        flex-direction: column !important;
+        align-items: center;
+        p{
+            &:first-child{
+                margin-bottom: 4rem;
+            }
+        }
+        }
+    }

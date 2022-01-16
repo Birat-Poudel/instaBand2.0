@@ -1274,7 +1274,7 @@ footer .footer__nav ul {
   margin-bottom: 5rem;
 }
 footer .fnav__text--container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
@@ -1287,7 +1287,7 @@ footer .fnav__text--container .fnav__text {
   cursor: pointer;
 }
 footer .fnav__text--container .fnav__text:first-child {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 2560px) {
@@ -1299,6 +1299,16 @@ footer .fnav__text--container .fnav__text:first-child {
   footer .footer__nav .fnav__icons {
     width: 7rem;
     height: 7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .fnav__text--container {
+    display: flexbox;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .fnav__text--container p:first-child {
+    margin-bottom: 4rem;
   }
 }
 .ab__body {
