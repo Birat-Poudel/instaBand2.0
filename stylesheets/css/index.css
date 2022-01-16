@@ -237,11 +237,12 @@ main .jumbotron {
   background-color: #1B1C1E;
   position: relative;
   max-width: 1500px;
-  border-color: none;
+  border-color: #1B1C1E;
 }
 main .jumbotron .video {
   width: 100%;
   transform: rotateY(180deg);
+  border-color: #1B1C1E;
 }
 main .jumbotron .callout-container--blackscreen {
   top: 0;
