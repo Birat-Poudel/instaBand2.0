@@ -1,7 +1,6 @@
 .cards{
     padding: 15rem 4rem;
     background-color: $primary-color;
-    box-shadow: 0 0px 5px 1.5px #0f0f0f;
     display: flex;
     -webkit-display: flex;
     flex-direction: row;
@@ -19,7 +18,7 @@
         background-color: #222222;
         padding: 4rem;
         &:hover{
-            box-shadow: 0 0px 10px 2.5px #0f0f0f;
+            box-shadow: 0 0px 28px -0.5px #0f0f0f;
         }
         .card-picture{
             max-height: 30rem;

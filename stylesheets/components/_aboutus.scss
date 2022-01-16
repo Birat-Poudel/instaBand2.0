@@ -7,13 +7,17 @@
     max-width: 1500px;
 
     .ab-image{
-        width: 45%;
+        width: 40%;
         object-fit: cover;
         -webkit-object-fit: cover;
         height: auto;
     }
 
     .ab-text{
+        flex-grow: 0.75;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .ab-header{
             font-size: $title-font-size;
             color: $accent-color;

@@ -82,6 +82,7 @@ header {
   width: 100%;
   background-color: #1B1C1E;
   padding: 0.75rem 4.5rem;
+  box-shadow: 0 0px 5px 1px #0f0f0f;
 }
 header .navbar {
   display: flex;
@@ -98,8 +99,8 @@ header .navbar .logo__container .logo {
 }
 header .navbar .logo__container .logo__text {
   font-family: "perspective_sansregular", sans-serif;
-  font-size: 3.6rem;
-  color: #3896d4;
+  font-size: 3rem;
+  color: #96C6D2;
   letter-spacing: 0.25rem;
   margin-top: 1.4rem;
 }
@@ -236,6 +237,7 @@ main .jumbotron {
   background-color: #1B1C1E;
   position: relative;
   max-width: 1500px;
+  border-color: none;
 }
 main .jumbotron .video {
   width: 100%;
@@ -353,10 +355,16 @@ main .jumbotron .callout-container .callout-btn:hover {
   max-width: 1500px;
 }
 .aboutus .ab-image {
-  width: 45%;
+  width: 40%;
   object-fit: cover;
   -webkit-object-fit: cover;
   height: auto;
+}
+.aboutus .ab-text {
+  flex-grow: 0.75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .aboutus .ab-text .ab-header {
   font-size: 4.4rem;
@@ -426,7 +434,6 @@ main .jumbotron .callout-container .callout-btn:hover {
 .cards {
   padding: 15rem 4rem;
   background-color: #1B1C1E;
-  box-shadow: 0 0px 5px 1.5px #0f0f0f;
   display: flex;
   -webkit-display: flex;
   flex-direction: row;
@@ -445,7 +452,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   padding: 4rem;
 }
 .cards .card:hover {
-  box-shadow: 0 0px 10px 2.5px #0f0f0f;
+  box-shadow: 0 0px 28px -0.5px #0f0f0f;
 }
 .cards .card .card-picture {
   max-height: 30rem;
@@ -743,7 +750,6 @@ main .jumbotron .callout-container .callout-btn:hover {
   display: block;
   background-color: #1B1C1E;
   max-width: 1500px;
-  box-shadow: 0 0px 5px 1.5px #0f0f0f;
 }
 
 /* Slideshow container */
@@ -1248,7 +1254,6 @@ footer {
   padding: 5rem 4.5rem;
   background-color: #1B1C1E;
   max-width: 1500px;
-  box-shadow: 0 0px 5px 1.5px #0f0f0f;
 }
 footer .footer__nav {
   display: inline-flex;
