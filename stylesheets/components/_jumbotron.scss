@@ -72,14 +72,14 @@ main{
 }
 
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1440px){
     main{
         overflow-x: hidden;
         .jumbotron{
             position: relative;
             .callout-container{
                 position: absolute;
-                top: 17rem;
+                top: 15rem;
             }
         }
     }
