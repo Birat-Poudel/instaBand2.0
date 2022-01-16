@@ -98,10 +98,10 @@ header .navbar .logo__container .logo {
 }
 header .navbar .logo__container .logo__text {
   font-family: "perspective_sansregular", sans-serif;
-  font-size: 4.6rem;
+  font-size: 3.6rem;
   color: #3896d4;
   letter-spacing: 0.25rem;
-  margin-top: 0.5rem;
+  margin-top: 1.4rem;
 }
 header .navbar ul {
   display: flex;
@@ -597,15 +597,15 @@ main .jumbotron .callout-container .callout-btn:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #EE7D54;
+  border: 2px solid #F5F5F5;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active1, .dot:hover {
-  background-color: #EE7D54;
+  background-color: #F5F5F5;
 }
 
 /* Fading animation */
@@ -830,15 +830,15 @@ main .jumbotron .callout-container .callout-btn:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #F5F5F5;
+  background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #EE7D54;
+  border: 2px solid #F5F5F5;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active2, .dot2:hover {
-  background-color: #EE7D54;
+  background-color: #F5F5F5;
 }
 
 /* Fading animation */
@@ -1083,15 +1083,15 @@ main .jumbotron .callout-container .callout-btn:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #EE7D54;
+  border: 2px solid #f5f5f5;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active3, .dot3:hover {
-  background-color: #EE7D54;
+  background-color: #f5f5f5;
 }
 
 /* Fading animation */
