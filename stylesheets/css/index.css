@@ -281,9 +281,25 @@ main .jumbotron .callout-container .callout-btn:hover {
   color: #00D296;
 }
 
+@media screen and (max-width: 2560px) {
+  main .jumbotron {
+    position: relative;
+  }
+  main .jumbotron .callout-container {
+    position: absolute;
+    top: 20rem;
+  }
+}
 @media screen and (max-width: 1150px) {
   main {
     overflow-x: hidden;
+  }
+  main .jumbotron {
+    position: relative;
+  }
+  main .jumbotron .callout-container {
+    position: absolute;
+    top: 17rem;
   }
 }
 @media screen and (max-width: 2560px) {
@@ -291,7 +307,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 445px) {
   main .jumbotron .callout-container--blackscreen {
     min-width: 100%;
   }
@@ -332,7 +348,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8rem 4.5rem;
+  padding: 16rem 4.5rem;
   width: 100%;
   max-width: 1500px;
 }
@@ -349,7 +365,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 .aboutus .ab-text .ab-body {
   font-size: 2.2rem;
-  color: #5E6065;
+  color: #F5F5F5;
   width: 40ch;
   letter-spacing: 0.125rem;
   line-height: 1.7;
@@ -408,7 +424,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
 }
 .cards {
-  padding: 5rem 4rem;
+  padding: 15rem 4rem;
   background-color: #1B1C1E;
   display: flex;
   -webkit-display: flex;
@@ -416,27 +432,37 @@ main .jumbotron .callout-container .callout-btn:hover {
   -webkit-flex-direction: row;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   max-width: 1500px;
 }
 .cards .card {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+  padding: 4rem;
+}
+.cards .card:hover {
+  box-shadow: 0 0px 10px 2.5px #0f0f0f;
 }
 .cards .card .card-picture {
-  max-height: 35rem;
+  max-height: 30rem;
+  width: 30rem;
   object-fit: cover;
   -webkit-object-fit: cover;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .cards .card .card-text {
   margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cards .card .card-text .card-header {
   font-size: 4.4rem;
   color: #EE7D54;
-  margin: 5rem 0;
+  margin: 2.5rem 0;
 }
 .cards .card .card-text .card-body {
   font-size: 2.2rem;
@@ -444,11 +470,17 @@ main .jumbotron .callout-container .callout-btn:hover {
   width: 20ch;
   letter-spacing: 0.125rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 @media screen and (max-width: 2560px) {
   .cards {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 974px) {
+  .card {
+    margin-top: 5rem;
   }
 }
 @media screen and (max-width: 539px) {
@@ -475,7 +507,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
 }
 .slideshow__package {
-  padding: 3rem 6rem;
+  padding: 6rem 6rem;
   display: block;
   max-width: 1500px;
 }
@@ -511,7 +543,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 .side__text .st__body {
   font-size: 2.2rem;
-  color: #5E6065;
+  color: #F5F5F5;
   letter-spacing: 0.125rem;
   width: 35ch;
 }
@@ -524,7 +556,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #EE7D54;
+  color: #F5F5F5;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -549,7 +581,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 
 /* Caption text */
 .text {
-  color: #EE7D54;
+  color: #F5F5F5;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -578,9 +610,9 @@ main .jumbotron .callout-container .callout-btn:hover {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.25s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.25s;
 }
 
 @-webkit-keyframes fade {
@@ -706,7 +738,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
 }
 .slideshow__package2 {
-  padding: 3rem 6rem;
+  padding: 6rem 6rem;
   display: block;
   background-color: #1B1C1E;
   max-width: 1500px;
@@ -752,7 +784,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #EE7D54;
+  color: #F5F5F5;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -777,7 +809,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 
 /* Caption text */
 .text2 {
-  color: #EE7D54;
+  color: #F5F5F5;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -796,7 +828,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #1B1C1E;
+  background-color: #F5F5F5;
   border-radius: 50%;
   border: 2px solid #EE7D54;
   display: inline-block;
@@ -810,9 +842,9 @@ main .jumbotron .callout-container .callout-btn:hover {
 /* Fading animation */
 .fade2 {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.25s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.25s;
 }
 
 @-webkit-keyframes fade2 {
@@ -959,7 +991,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   }
 }
 .slideshow__package3 {
-  padding: 3rem 6rem;
+  padding: 6rem 6rem;
   display: block;
   max-width: 1200px;
 }
@@ -991,7 +1023,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 .side__text3 .st__body3 {
   font-size: 2.2rem;
-  color: #5E6065;
+  color: #F5F5F5;
   letter-spacing: 0.125rem;
   width: 35ch;
 }
@@ -1009,7 +1041,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #EE7D54;
+  color: #f5f5f5;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -1034,7 +1066,7 @@ main .jumbotron .callout-container .callout-btn:hover {
 
 /* Caption text */
 .text3 {
-  color: #EE7D54;
+  color: #f5f5f5;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -1063,9 +1095,9 @@ main .jumbotron .callout-container .callout-btn:hover {
 /* Fading animation */
 .fade3 {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.25s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.25s;
 }
 
 @-webkit-keyframes fade3 {

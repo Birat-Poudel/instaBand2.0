@@ -1,5 +1,5 @@
 .slideshow__package{
-    padding: 3rem 6rem;
+    padding: 6rem 6rem;
     display: block;
     max-width: 1500px;
 }
@@ -36,7 +36,7 @@
 
   .st__body{
     font-size: $body-font-size;
-    color: $fontcolor-whitescreen;
+    color: $fontcolor-blackscreen;
     letter-spacing: 0.125rem;
     width: 35ch;
   }
@@ -50,7 +50,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: $accent-color;
+    color: #F5F5F5;
     font-weight: bold;
     font-size: 24px;
     transition: 0.6s ease;
@@ -75,7 +75,7 @@
   
 /* Caption text */
 .text {
-    color: $accent-color;
+    color: #F5F5F5;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -104,9 +104,9 @@
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: .25s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: .25s;
   }
   
   @-webkit-keyframes fade {

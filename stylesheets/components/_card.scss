@@ -1,5 +1,5 @@
 .cards{
-    padding: 5rem 4rem;
+    padding: 15rem 4rem;
     background-color: $primary-color;
     display: flex;
     -webkit-display: flex;
@@ -7,26 +7,36 @@
     -webkit-flex-direction: row;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     max-width: 1500px;
 
     .card{
         display: inline-flex;
         flex-direction: column;
+        align-items: center;
+        background-color: #222222;
+        padding: 4rem;
+        &:hover{
+            box-shadow: 0 0px 10px 2.5px #0f0f0f;
+        }
         .card-picture{
-            max-height: 35rem;
+            max-height: 30rem;
+            width: 30rem;
             object-fit: cover;
             -webkit-object-fit: cover;
-            margin-top: 5rem;
+            margin-top: 2rem;
         }
 
         .card-text{
             margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .card-header{
                 font-size: $title-font-size;
                 color: $accent-color;
-                margin: 5rem 0;
+                margin: 2.5rem 0;
             }
 
             .card-body{
@@ -35,6 +45,7 @@
                 width: 20ch;
                 letter-spacing: 0.125rem;
                 line-height: 1.5;
+                text-align: center;
             }
         }
 
@@ -46,6 +57,12 @@
         margin: 0 auto;
     }
 
+}
+
+@media screen and (max-width: 974px){
+    .card{
+        margin-top: 5rem;
+    }
 }
 
 @media screen and (max-width: 539px){
