@@ -100,6 +100,7 @@ header .navbar .logo__container .logo {
 header .navbar .logo__container .logo__text {
   font-family: "perspective_sansregular", sans-serif;
   font-size: 3rem;
+  font-weight: 600;
   color: #96C6D2;
   letter-spacing: 0.25rem;
   margin-top: 1.4rem;
