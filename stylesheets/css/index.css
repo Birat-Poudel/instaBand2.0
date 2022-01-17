@@ -1683,6 +1683,7 @@ footer .fnav__text--container .fnav__text:first-child {
   background-color: #F5F5F5;
   width: 43rem;
   padding: 4rem;
+  box-shadow: 0 1.5px 5px 5px #0e0e0e;
 }
 .profile__section .profile__section__card .ps__card1__container {
   display: flex;
@@ -1782,7 +1783,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .profile__section__details .psd__info1 p:nth-child(1) {
   color: #EE7D54;
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-bottom: 2px solid #EE7D54;
   margin-bottom: 1rem;
   max-width: 200px;
@@ -1794,7 +1795,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .profile__section__details .psd__info2 p:nth-child(1) {
   color: #EE7D54;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .profile__section__details .psd__info2 p:nth-child(2) {
@@ -1804,7 +1805,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .profile__section__details .psd__info3 p:nth-child(1) {
   color: #EE7D54;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .profile__section__details .psd__info3 p:nth-child(2) {
@@ -1814,7 +1815,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .profile__section__details .psd__info4 p:nth-child(1) {
   color: #EE7D54;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .profile__section__details .psd__info4 button {
@@ -1835,7 +1836,7 @@ footer .fnav__text--container .fnav__text:first-child {
 }
 .profile__section__details .psd__info5 p:nth-child(1) {
   color: #EE7D54;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .profile__section__details .psd__info5 button {
