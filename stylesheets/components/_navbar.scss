@@ -43,6 +43,10 @@ header{
                   color: $fontcolor-blackscreen;
                   font-size: $nav-font-size;
                   letter-spacing: $letter-spacing;
+                  &.activatedNav{
+                    padding: 0.5rem;
+                    border-bottom: 2px solid $secondary-color;
+                  }
                 }
             }
         }
