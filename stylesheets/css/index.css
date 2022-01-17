@@ -1543,3 +1543,126 @@ footer .fnav__text--container .fnav__text:first-child {
     transform: translateY(0px);
   }
 }
+.db__body {
+  background-color: #1B1C1E;
+}
+
+.recent__renters__container {
+  padding: 6rem 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.recent__renters__header h3 {
+  font-size: 4rem;
+  color: #EE7D54;
+  margin-bottom: 5rem;
+}
+
+.rr__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  width: 35rem;
+}
+
+.rr__card__image img {
+  height: 20rem !important;
+  width: 20rem !important;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 3rem auto;
+}
+
+.rr__card__name p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #00D296;
+  letter-spacing: 0.125rem;
+  line-height: 1.5;
+}
+
+.rr__card__genre p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(#F51515, #F145FE);
+  letter-spacing: 0.125rem;
+  line-height: 1.5;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.rr__card__genre.renter123 p {
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(#d69018, #9f5ed8);
+  letter-spacing: 0.125rem;
+  line-height: 1.5;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.rr__card__rating {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+}
+.rr__card__rating .fa-star, .rr__card__rating .fa-star-half-alt {
+  color: #e2d625;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+.rr__card__rating .rating__number {
+  color: #5E6065;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.rr__card__btn button {
+  padding: 1rem 2rem;
+  font-size: 2.2rem;
+  border: 1px solid #EE7D54;
+  color: #EE7D54;
+  background-color: transparent;
+  border-radius: 2.5rem;
+  letter-spacing: 0.125rem;
+  margin: 4rem auto;
+  cursor: pointer;
+}
+.rr__card__btn button:hover {
+  background-color: #EE7D54;
+  color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+}
+
+.owl-prev {
+  left: -30px;
+}
+
+.owl-next {
+  right: -30px;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 35%;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 80px;
+  color: #F5F5F5;
+}
+.owl-prev span:hover, .owl-next span:hover {
+  background-color: #1B1C1E;
+}
+
+.owl-stage {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-next span:focus, .owl-prev span:focus {
+  outline: none;
+}

@@ -67,7 +67,6 @@ abContainerExtra.addEventListener('click', (e)=>{
 //For Feedback Carousel
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        center: true,
         margin: 15,
         autoplay: true,
         autoplayhoverpause: true,
@@ -82,7 +81,7 @@ $(document).ready(function(){
                 dots:true
             },
             375:{
-                items: 1.28,
+                items: 1.08,
                 dots: true
             },
             425:{
@@ -90,11 +89,11 @@ $(document).ready(function(){
                 dots: true
             },
             768: {
-                items: 2,
+                items: 2.38,
                 dots: true
             },
             1200: {
-                items: 3,
+                items: 3.05,
                 dots: true
             },
         }
