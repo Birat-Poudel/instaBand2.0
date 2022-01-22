@@ -563,14 +563,15 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -589,13 +590,14 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   transform: scale(1.1);
 }
 
 /* Caption text */
 .text {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -612,13 +614,14 @@ main .jumbotron .callout-container .callout-btn:hover {
   margin: 0 2px;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #F5F5F5;
+  border: 2px solid #f5f5f5;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active1, .dot:hover {
-  background-color: #F5F5F5;
+.active1,
+.dot:hover {
+  background-color: #f5f5f5;
 }
 
 /* Fading animation */
@@ -645,7 +648,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 900px) {
   .slideshow__package {
     padding: 5rem 1rem;
     display: block;
@@ -673,17 +676,64 @@ main .jumbotron .callout-container .callout-btn:hover {
   .text {
     position: relative;
   }
-}
-@media screen and (max-width: 768px) {
+
   .prev {
     position: relative;
-    top: -25rem;
+    top: -250px;
   }
 
   .next {
     position: relative;
-    top: -25rem;
-    right: -11rem;
+    top: -250px;
+    right: -118px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .prev {
+    position: relative;
+    top: -30rem;
+  }
+
+  .next {
+    position: relative;
+    top: -30rem;
+    right: -13rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .prev {
+    position: relative;
+    top: -28rem;
+  }
+
+  .next {
+    position: relative;
+    top: -28rem;
+    right: -12rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
+  .next {
+    position: relative;
+    top: -26rem;
+    right: -10.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
+  .next {
+    position: relative;
+    top: -26rem;
+    right: -8.5rem;
   }
 }
 @media screen and (max-width: 2560px) {
@@ -691,7 +741,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .slideshow__package {
     padding: 1rem 1rem;
   }
@@ -724,31 +774,89 @@ main .jumbotron .callout-container .callout-btn:hover {
   .prev {
     position: relative;
     left: -9rem;
-    top: -20rem;
+    top: -30rem;
   }
 
   .next {
     position: relative;
-    top: -20rem;
-    right: -3rem;
+    top: -30rem;
+    right: -13rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .prev {
     position: relative;
-    left: -9rem;
-    top: -15rem;
+    top: -26rem;
   }
 
   .next {
     position: relative;
-    top: -15rem;
-    right: 1rem;
+    top: -26rem;
+    right: -8.5rem;
   }
 }
-@media screen and (width: 375px) {
+@media screen and (max-width: 555px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
   .next {
-    right: -2rem;
+    position: relative;
+    top: -26rem;
+    right: -7.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -22rem;
+  }
+
+  .next {
+    position: relative;
+    top: -22rem;
+    right: -45px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -20rem;
+  }
+
+  .next {
+    position: relative;
+    top: -20rem;
+    right: -25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -16rem;
+  }
+
+  .next {
+    position: relative;
+    top: -16rem;
+    right: -10px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -16rem;
+  }
+
+  .next {
+    position: relative;
+    top: -16rem;
+    right: -1px;
   }
 }
 .slideshow__package2 {
@@ -791,14 +899,15 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 
 /* Next & previous buttons */
-.prev2, .next2 {
+.prev2,
+.next2 {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -817,13 +926,14 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev2:hover, .next2:hover {
+.prev2:hover,
+.next2:hover {
   transform: scale(1.1);
 }
 
 /* Caption text */
 .text2 {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -844,13 +954,14 @@ main .jumbotron .callout-container .callout-btn:hover {
   margin: 0 2px;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #F5F5F5;
+  border: 2px solid #f5f5f5;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active2, .dot2:hover {
-  background-color: #F5F5F5;
+.active2,
+.dot2:hover {
+  background-color: #f5f5f5;
 }
 
 /* Fading animation */
@@ -877,7 +988,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 900px) {
   .slideshow__package2 {
     padding: 5rem 1rem;
   }
@@ -906,12 +1017,30 @@ main .jumbotron .callout-container .callout-btn:hover {
     position: relative;
   }
 }
+@media screen and (max-width: 899px) {
+  .prev2 {
+    top: 58rem;
+  }
+
+  .next2 {
+    top: 58rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .prev2 {
+    top: 55rem;
+  }
+
+  .next2 {
+    top: 55rem;
+  }
+}
 @media screen and (max-width: 2560px) {
   .slideshow__package2 {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .dots2 {
     display: none;
   }
@@ -944,13 +1073,63 @@ main .jumbotron .callout-container .callout-btn:hover {
 
   .prev2 {
     position: relative;
-    top: -19rem;
+    top: -30rem;
   }
 
   .next2 {
     position: relative;
-    top: -19rem;
+    top: -30rem;
+    right: -18rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .prev2 {
+    top: -28rem;
+  }
+
+  .next2 {
+    top: -28rem;
+    right: -16.5rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .prev2 {
+    top: -26rem;
+  }
+
+  .next2 {
+    top: -26rem;
+    right: -13.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .prev2 {
+    top: -24rem;
+  }
+
+  .next2 {
+    top: -24rem;
+    right: -10.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .prev2 {
+    top: -22rem;
+  }
+
+  .next2 {
+    top: -22rem;
     right: -9rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .prev2 {
+    top: -20rem;
+  }
+
+  .next2 {
+    top: -20rem;
+    right: -7rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -992,16 +1171,7 @@ main .jumbotron .callout-container .callout-btn:hover {
   .next2 {
     position: relative;
     top: -16rem;
-    right: -5rem;
-  }
-}
-@media screen and (width: 768px) {
-  .prev2 {
-    top: 39rem;
-  }
-
-  .next2 {
-    top: 39rem;
+    right: -4.5rem;
   }
 }
 .slideshow__package3 {
@@ -1048,7 +1218,8 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 
 /* Next & previous buttons */
-.prev3, .next3 {
+.prev3,
+.next3 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -1074,7 +1245,8 @@ main .jumbotron .callout-container .callout-btn:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev3:hover, .next3:hover {
+.prev3:hover,
+.next3:hover {
   transform: scale(1.1);
 }
 
@@ -1102,7 +1274,8 @@ main .jumbotron .callout-container .callout-btn:hover {
   transition: background-color 0.6s ease;
 }
 
-.active3, .dot3:hover {
+.active3,
+.dot3:hover {
   background-color: #f5f5f5;
 }
 
@@ -1130,7 +1303,7 @@ main .jumbotron .callout-container .callout-btn:hover {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 900px) {
   .slideshow__package3 {
     padding: 5rem 1rem;
     display: block;
@@ -1166,12 +1339,21 @@ main .jumbotron .callout-container .callout-btn:hover {
     position: relative;
   }
 }
+@media screen and (max-width: 899px) {
+  .prev3 {
+    top: 60rem;
+  }
+
+  .next3 {
+    top: 60rem;
+  }
+}
 @media screen and (max-width: 2560px) {
   .slideshow__package3 {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .dots3 {
     display: none;
   }
@@ -1182,14 +1364,14 @@ main .jumbotron .callout-container .callout-btn:hover {
 
   .prev3 {
     position: relative;
-    top: -18rem;
-    left: -10rem;
+    top: -30rem;
+    left: -12rem;
   }
 
   .next3 {
     position: relative;
-    top: -18rem;
-    right: -3rem;
+    top: -30rem;
+    right: -9.5rem;
   }
 
   .slideshow__package3 {
@@ -1217,7 +1399,39 @@ main .jumbotron .callout-container .callout-btn:hover {
     left: -50%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+  .prev3 {
+    top: -25rem;
+  }
+
+  .next3 {
+    top: -25rem;
+    right: -8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .prev3 {
+    top: -20rem;
+    left: -9rem;
+  }
+
+  .next3 {
+    top: -20rem;
+    right: -4rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .prev3 {
+    top: -20rem;
+    left: -10rem;
+  }
+
+  .next3 {
+    top: -20rem;
+    right: -3rem;
+  }
+}
+@media screen and (max-width: 350px) {
   .slideshow__package3 {
     padding: 1rem 1rem;
   }
@@ -1245,15 +1459,6 @@ main .jumbotron .callout-container .callout-btn:hover {
     position: relative;
     top: -16rem;
     right: -1rem;
-  }
-}
-@media screen and (width: 768px) {
-  .prev3 {
-    top: 39rem;
-  }
-
-  .next3 {
-    top: 39rem;
   }
 }
 footer {

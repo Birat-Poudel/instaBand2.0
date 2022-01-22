@@ -1,4 +1,4 @@
-.slideshow__package2{
+.slideshow__package2 {
   padding: 6rem 6rem;
   display: block;
   background-color: $primary-color;
@@ -19,35 +19,36 @@
   padding: 1rem;
 }
 
-.side__text2{
-position: absolute;
-top: 5rem;
-right: 42rem;
+.side__text2 {
+  position: absolute;
+  top: 5rem;
+  right: 42rem;
 
-.st__header2{
-  font-size: $title-font-size;
-  color: $accent-color;
-  letter-spacing: 0.25rem;
-  margin-bottom: 5rem;
-}
+  .st__header2 {
+    font-size: $title-font-size;
+    color: $accent-color;
+    letter-spacing: 0.25rem;
+    margin-bottom: 5rem;
+  }
 
-.st__body2{
-  font-size: $body-font-size;
-  color: $fontcolor-blackscreen;
-  letter-spacing: 0.125rem;
-  width: 35ch;
-}
+  .st__body2 {
+    font-size: $body-font-size;
+    color: $fontcolor-blackscreen;
+    letter-spacing: 0.125rem;
+    width: 35ch;
+  }
 }
 
 /* Next & previous buttons */
-.prev2, .next2 {
+.prev2,
+.next2 {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -55,7 +56,7 @@ right: 42rem;
   user-select: none;
 }
 
-.prev2{
+.prev2 {
   left: -35px;
 }
 
@@ -66,13 +67,14 @@ right: 42rem;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev2:hover, .next2:hover {
+.prev2:hover,
+.next2:hover {
   transform: scale(1.1);
 }
 
 /* Caption text */
 .text2 {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -81,10 +83,10 @@ right: 42rem;
   text-align: center;
 }
 
-.dots2{
+.dots2 {
   text-align: center;
 }
-  
+
 /* The dots/bullets/indicators */
 .dot2 {
   cursor: pointer;
@@ -93,170 +95,235 @@ right: 42rem;
   margin: 0 2px;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #F5F5F5;
+  border: 2px solid #f5f5f5;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active2, .dot2:hover {
-  background-color: #F5F5F5;
+.active2,
+.dot2:hover {
+  background-color: #f5f5f5;
 }
 
 /* Fading animation */
 .fade2 {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: .25s;
+  -webkit-animation-duration: 0.25s;
   animation-name: fade;
-  animation-duration: .25s;
+  animation-duration: 0.25s;
 }
 
 @-webkit-keyframes fade2 {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade2 {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media screen and (max-width: 1150px){
-  .slideshow__package2{
+@media screen and (max-width: 900px) {
+  .slideshow__package2 {
     padding: 5rem 1rem;
   }
 
-  .slideshow-container2{
-    right:0;
+  .slideshow-container2 {
+    right: 0;
     margin: 0 auto;
   }
 
-  .side__text2{
+  .side__text2 {
     position: relative;
     left: -50%;
     top: -5rem;
   }
 
-  .st__header2{
+  .st__header2 {
     width: 35ch;
   }
 
-  .dots2{
+  .dots2 {
     position: relative;
     left: 0rem;
   }
 
-  .text2{
+  .text2 {
     position: relative;
   }
-
 }
 
-@media screen and (max-width:2560px){
-  .slideshow__package2{
+@media screen and (max-width: 899px) {
+  .prev2 {
+    top: 58rem;
+  }
+
+  .next2 {
+    top: 58rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev2 {
+    top: 55rem;
+  }
+
+  .next2 {
+    top: 55rem;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .slideshow__package2 {
     margin: 0 auto;
   }
-
 }
 
-@media screen and (max-width: 425px){
-  .dots2{
+@media screen and (max-width: 700px) {
+  .dots2 {
     display: none;
   }
-  .slideshow__package2{
+  .slideshow__package2 {
     padding: 1rem 1rem;
-    .slideshow-container2{
+    .slideshow-container2 {
       width: 30%;
       position: relative;
-      .mySlides2{
-        .side__image2{
+      .mySlides2 {
+        .side__image2 {
           position: relative;
           left: 0;
-          
         }
-        .text2{
+        .text2 {
           display: none;
         }
-
       }
     }
   }
-  .side__text2{
+  .side__text2 {
     position: relative;
     left: -15rem;
-    .st__header2{
+    .st__header2 {
       max-width: 300px;
     }
-    .st__body2{
+    .st__body2 {
       max-width: 300px;
     }
   }
 
-  .prev2{
+  .prev2 {
     position: relative;
-    top: -19rem;
-
+    top: -30rem;
   }
 
-  .next2{
+  .next2 {
     position: relative;
-    top:-19rem;
+    top: -30rem;
+    right: -18rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .prev2 {
+    top: -28rem;
+  }
+
+  .next2 {
+    top: -28rem;
+    right: -16.5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .prev2 {
+    top: -26rem;
+  }
+
+  .next2 {
+    top: -26rem;
+    right: -13.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .prev2 {
+    top: -24rem;
+  }
+
+  .next2 {
+    top: -24rem;
+    right: -10.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .prev2 {
+    top: -22rem;
+  }
+
+  .next2 {
+    top: -22rem;
     right: -9rem;
-  }   
+  }
 }
 
-@media screen and (max-width: 320px){
-  .dots2{
+@media screen and (max-width: 375px) {
+  .prev2 {
+    top: -20rem;
+  }
+
+  .next2 {
+    top: -20rem;
+    right: -7rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dots2 {
     display: none;
   }
-  .slideshow__package2{
+  .slideshow__package2 {
     padding: 1rem 1rem;
-    .slideshow-container2{
+    .slideshow-container2 {
       width: 30%;
       position: relative;
-      .mySlides2{
-        .side__image2{
+      .mySlides2 {
+        .side__image2 {
           position: relative;
           left: 0;
-          
         }
-        .text2{
+        .text2 {
           display: none;
         }
-
       }
     }
   }
-  .side__text2{
+  .side__text2 {
     position: relative;
     left: -15rem;
-    .st__header2{
+    .st__header2 {
       max-width: 300px;
     }
-    .st__body2{
+    .st__body2 {
       max-width: 300px;
     }
   }
 
-  .prev2{
+  .prev2 {
     position: relative;
     top: -16rem;
-
   }
 
-  .next2{
+  .next2 {
     position: relative;
-    top:-16rem;
-    right: -5rem;
-  }   
-
-}
-
-@media screen and (width: 768px){
-  .prev2{
-    top: 39rem;
-  }
-
-  .next2{
-    top: 39rem;
+    top: -16rem;
+    right: -4.5rem;
   }
 }

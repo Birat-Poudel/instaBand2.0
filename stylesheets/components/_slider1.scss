@@ -1,247 +1,356 @@
-.slideshow__package{
-    padding: 6rem 6rem;
-    display: block;
-    max-width: 1500px;
+.slideshow__package {
+  padding: 6rem 6rem;
+  display: block;
+  max-width: 1500px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    padding-top: 5rem;
-    width: 20%;
-    position: relative;
-    right: -5rem;
-}
-  
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    padding: 1rem;
+  padding-top: 5rem;
+  width: 20%;
+  position: relative;
+  right: -5rem;
 }
 
-.dots{
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  padding: 1rem;
+}
+
+.dots {
   text-align: center;
 }
 
-.side__text{
+.side__text {
   position: absolute;
   top: 5rem;
   right: -80rem;
 
-  .st__header{
+  .st__header {
     font-size: $title-font-size;
     color: $accent-color;
     letter-spacing: 0.25rem;
     margin-bottom: 5rem;
   }
 
-  .st__body{
+  .st__body {
     font-size: $body-font-size;
     color: $fontcolor-blackscreen;
     letter-spacing: 0.125rem;
     width: 35ch;
   }
 }
-  
+
 /* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #F5F5F5;
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.prev{
-    left: -35px;
+.prev {
+  left: -35px;
 }
-  
+
 /* Position the "next button" to the right */
 .next {
-    right: -35px;
-    border-radius: 3px 0 0 3px;
+  right: -35px;
+  border-radius: 3px 0 0 3px;
 }
-  
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    transform: scale(1.1);
+.prev:hover,
+.next:hover {
+  transform: scale(1.1);
 }
-  
+
 /* Caption text */
 .text {
-    color: #F5F5F5;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: -20px;
-    width: 100%;
-    text-align: center;
+  color: #f5f5f5;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  text-align: center;
 }
-    
+
 /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 2px solid #F5F5F5;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active1, .dot:hover {
-    background-color: #F5F5F5;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: .25s;
-    animation-name: fade;
-    animation-duration: .25s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #f5f5f5;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-@media screen and (max-width: 1150px){
+.active1,
+.dot:hover {
+  background-color: #f5f5f5;
+}
 
-  .slideshow__package{
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.25s;
+  animation-name: fade;
+  animation-duration: 0.25s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slideshow__package {
     padding: 5rem 1rem;
     display: block;
-}
-  .slideshow-container{
+  }
+
+  .slideshow-container {
     margin: 0 auto;
   }
 
-  .side__text{
+  .side__text {
     position: relative;
-    left:-80%;
-    top:-5rem;
+    left: -80%;
+    top: -5rem;
   }
 
-  .st__header{
+  .st__header {
     width: 35ch;
-
   }
 
-  .st__body{
-
-  }
-
-  .dots{
+  .dots {
     position: relative;
     left: 5rem;
   }
 
-  .text{
+  .text {
     position: relative;
   }
-  }
 
-  @media screen and (max-width: 768px){
-    .prev{
-      position: relative;
-      top: -25rem;
-    }
-  
-    .next{
-      position: relative;
-      top: -25rem;
-      right: -11rem;
-  
-    }
-  }
-
-  @media screen and (max-width:2560px){
-    .slideshow__package{
-      margin: 0 auto;
-    }
-
-  }
-
-  @media screen and (max-width: 425px){
-    .slideshow__package{
-      padding: 1rem 1rem;
-      .slideshow-container{
-        width: 30%;
-      }
-      .mySlides{
-        .side__image{
-          position: relative;
-          left: -5rem;
-          
-        }
-        .text{
-          display: none;
-        }
-
-      }
-    }
-    .side__text{
-      position: relative;
-      left: -20rem;
-      .st__header{
-        max-width: 300px;
-      }
-      .st__body{
-        max-width: 300px;
-      }
-    }
-
-    .dots{
-      display: none;
-    }
-
-    .prev{
-      position: relative;
-      left: -9rem;
-      top: -20rem;
-  
-    }
-  
-    .next{
-      position: relative;
-      top: -20rem;
-      right: -3rem;
-    }   
-
-    
-  }
-
-@media screen and (max-width: 320px){
-  .prev{
+  .prev {
     position: relative;
-    left: -9rem;
-    top: -15rem;
-
+    top: -250px;
   }
 
-  .next{
+  .next {
     position: relative;
-    top: -15rem;
-    right: 1rem;
-  }   
-
+    top: -250px;
+    right: -118px;
+  }
 }
 
-@media screen and (width: 375px){
-  .next{
-    right: -2rem;
+@media screen and (max-width: 850px) {
+  .prev {
+    position: relative;
+    top: -30rem;
+  }
+
+  .next {
+    position: relative;
+    top: -30rem;
+    right: -13rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .prev {
+    position: relative;
+    top: -28rem;
+  }
+
+  .next {
+    position: relative;
+    top: -28rem;
+    right: -12rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
+  .next {
+    position: relative;
+    top: -26rem;
+    right: -10.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
+  .next {
+    position: relative;
+    top: -26rem;
+    right: -8.5rem;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .slideshow__package {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slideshow__package {
+    padding: 1rem 1rem;
+    .slideshow-container {
+      width: 30%;
+    }
+    .mySlides {
+      .side__image {
+        position: relative;
+        left: -5rem;
+      }
+      .text {
+        display: none;
+      }
+    }
+  }
+  .side__text {
+    position: relative;
+    left: -20rem;
+    .st__header {
+      max-width: 300px;
+    }
+    .st__body {
+      max-width: 300px;
+    }
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .prev {
+    position: relative;
+    left: -9rem;
+    top: -30rem;
+  }
+
+  .next {
+    position: relative;
+    top: -30rem;
+    right: -13rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
+  .next {
+    position: relative;
+    top: -26rem;
+    right: -8.5rem;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .prev {
+    position: relative;
+    top: -26rem;
+  }
+
+  .next {
+    position: relative;
+    top: -26rem;
+    right: -7.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -22rem;
+  }
+
+  .next {
+    position: relative;
+    top: -22rem;
+    right: -45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -20rem;
+  }
+
+  .next {
+    position: relative;
+    top: -20rem;
+    right: -25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -16rem;
+  }
+
+  .next {
+    position: relative;
+    top: -16rem;
+    right: -10px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .prev {
+    position: relative;
+    left: -70px;
+    top: -16rem;
+  }
+
+  .next {
+    position: relative;
+    top: -16rem;
+    right: -1px;
   }
 }
