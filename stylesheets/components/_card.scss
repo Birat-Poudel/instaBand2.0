@@ -67,6 +67,8 @@
 
 @media screen and (max-width: 539px){
     .cards{
+        padding-top: 5rem;
+        padding-bottom: 7rem;
         flex-wrap: nowrap;
         flex-direction: column;    
     }

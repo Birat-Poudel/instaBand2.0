@@ -40,7 +40,7 @@
         flex-direction: column;
         align-items: center;
         .ab-image{
-            width: 80%;
+            width: 60%;
         }
 
         .ab-text{
@@ -82,6 +82,14 @@
             .ab-body{
                 width: 30ch;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aboutus{
+        .ab-image{
+            width: 80%;
         }
     }
 }
